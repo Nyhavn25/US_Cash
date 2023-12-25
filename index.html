@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <base />
+    <title>CashApp</title>
+    <meta
+      name="viewport"
+      content="user-scalable=false, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <link href="./assets/favicon.ico" rel="icon" type="image/x-icon" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+    <link rel="stylesheet" type="text/css" href="./style/style.css" />
+  </head>
+
+  <body>
+    <div id="a-nav" class="a-nav">
+      <h1>CashApp Loyalty Program</h1>
+    </div>
+
+    <main>
+      <div class="content">
+        <div class="main-content" id="content1">
+          <div class="content_header">
+            <p class="title">Congratulations!</p>
+            <p class="title-small">
+              Every <span id="weekDay">Monday</span> we select 7 lucky people to
+              receive a $1,000 CashApp Gift Card. Spin the wheel to claim your
+              special prize.
+            </p>
+          </div>
+          <div class="spinner" id="spinner">
+            <img id="spinBG" src="./assets/11.png" />
+            <img id="spin" src="./assets/prizewheel-amazon_2.png" />
+            <img
+              id="win"
+              src="./assets/spin-button.png"
+              onclick="spinWheel()"
+            />
+            <img
+              id="iphone"
+              class="spinner_prize"
+              src="./assets/walmart_1.png"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="sweet-overlay" tabindex="-1" onclick="closeModal()"></div>
+
+    <div id="modal01" class="modal sweet-alert animated bounceIn visible">
+      <div class="modal_container_1">
+        <h2>Congratulations!</h2>
+        <p attr-cou="default">
+          YOU have been selected by CashApp for a shot at a $1,000 Gift Card.
+          Simply spin the wheel to see if you're today's winner! <br /><br />
+          Click "OK" to claim your special prize 🎁 <br /><br /><strong>
+            Good Luck!
+          </strong>
+        </p>
+      </div>
+      <div class="sa-button-container">
+        <div class="sa-confirm-button-container">
+          <button class="modal_button" onclick="closeModal()">OK</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal02" class="modal sweet-alert animated bounceIn">
+      <div id="success02" class="sa-icon sa-success animate">
+        <span id="successtip02" class="sa-line sa-tip animateSuccessTip"></span
+        ><span
+          id="successlong02"
+          class="sa-line sa-long animateSuccessLong"
+        ></span>
+        <div class="sa-placeholder"></div>
+        <div class="sa-fix"></div>
+      </div>
+      <h2>Try again!</h2>
+      <p class="modal_text">You have <strong> (1) </strong> extra spin!</p>
+      <div class="sa-button-container">
+        <div class="sa-confirm-button-container">
+          <button
+            id="modalButtonSecond"
+            class="modal_button"
+            onclick="closeModal()"
+          >
+            OK
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal03" class="modal sweet-alert animated bounceIn">
+      <div id="success03" class="sa-icon sa-success animate">
+        <span id="successtio03" class="sa-line sa-tip"></span
+        ><span
+          id="successlong03"
+          class="sa-line sa-long animateSuccessLong"
+        ></span>
+        <div class="sa-placeholder"></div>
+        <div class="sa-fix"></div>
+      </div>
+      <div class="modal_container_3">
+        <h2>Congratulations!</h2>
+        <p>
+          <strong> (1) $1000 CashApp Gift Card </strong> is reserved for you!
+        </p>
+        <p>
+          To claim your prize, click the button bellow and verify your
+          information on the next page.
+        </p>
+        <a
+          target="_blank"
+          class="prize_button second_offer_button"
+          href="http://bqswh.bemobtrcks.com/go/7247105f-0c05-4b51-a1df-4a8c22ae228a?BID_PRICE=[BID_PRICE]&CLICK_ID=[CLICK_ID]&CREATIVE_ID=[CREATIVE_ID]&PUBLISHER_ID=[PUBLISHER_ID]&SITE_ID=[SITE_ID]&SUB_LIST_ID=[SUB_LIST_ID]&CAMPAIGN_ID=[CAMPAIGN_ID]&CAMPAIGN_NAME=[CAMPAIGN_NAME]&USER_ID=[USER_ID]&OS=[OS]&REGION=[REGION]&USERAGENT=[USERAGENT]"
+        >
+          Claim Your Prize
+        </a>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="main-content2">
+        <div class="comments">
+          <p class="like_container" id="total_likes">
+            <i class="icon-commenting"></i><span class="like"> 18,068 </span
+            ><span class="like_text"> people like this </span>
+          </p>
+        </div>
+        <div class="comments">
+          <span class="comments_text"> View Comments </span
+          ><span class="comments_number"> 73,312 </span>
+        </div>
+        <div class="comments">
+          <div class="comment-content pic1">
+            <p class="name">Victoria Johnson</p>
+            <p class="comentarios">
+              I had never won anything, but today I was lucky! Thank you!
+            </p>
+            <span class="comment-status"
+              ><span
+                ><span class="like"> Like </span> · Reply · Just now
+              </span></span
+            >
+          </div>
+        </div>
+
+        <div class="comments">
+          <div class="comment-content pic2">
+            <p class="name">Phil Graham</p>
+            <p class="comentarios">
+              Initially I was not sure if this is real or not, but I have
+              received my gift card today, thank you!!
+            </p>
+            <span class="comment-status"
+              ><span
+                ><span class="like"> Like </span> · Reply · 2 minutes ago
+              </span></span
+            >
+          </div>
+        </div>
+
+        <div class="comments">
+          <div class="comment-content pic3">
+            <p class="name">Mike Hines</p>
+            <p class="comentarios">
+              At first I thought this was just a joke, but the gift card arrived
+              by the mail this morning! <br />
+            </p>
+            <span class="comment-status"
+              ><span
+                ><span class="like"> Like </span> · Reply · 4 minutes ago
+              </span></span
+            >
+          </div>
+        </div>
+
+        <div class="comments">
+          <div class="comment-content pic4">
+            <p class="name">Sandra Moore</p>
+            <p class="comentarios">Sweeeet! I've won an iPhone!! My gosh!</p>
+            <span class="comment-status"
+              ><span
+                ><span class="like"> Like </span> · Reply · 8 minutes ago
+              </span></span
+            >
+          </div>
+        </div>
+
+        <div class="comments">
+          <div class="comment-content pic5">
+            <p class="name">Tom Rise</p>
+            <p class="comentarios">I've lost 😢 Can I play again??? <br /></p>
+            <span class="comment-status"
+              ><span
+                ><span class="like"> Like </span> · Reply · 11 minutes ago
+              </span></span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
